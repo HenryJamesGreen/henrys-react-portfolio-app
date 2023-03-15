@@ -25,7 +25,7 @@ function Contact() {
         CONTACT
       </Typography>
 
-      <Card style={{ maxWidth: 450, margin: "0 auto", padding: "20px 5px" }}>
+      <Card style={{ maxWidth: 450, margin: "0 auto", padding: "20px 5px", justifyContent: "center" , textAlign: "center"}}>
         <CardContent>
           <Typography gutterBottom variant="h5">
             Contact Me
