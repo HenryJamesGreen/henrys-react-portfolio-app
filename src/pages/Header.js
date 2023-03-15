@@ -30,12 +30,7 @@ function ResponsiveAppBar() {
     <AppBar position="static" sx={{ bgcolor: 'rgba(0,20,50,0.9)'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Link to="/">
-            <FaReact
-              className="icons react"
-              style={{ fontSize: 20, color: "White", padding: "" }}
-            />
-          </Link>
+         
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
