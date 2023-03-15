@@ -82,7 +82,7 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <a href="/">
+          <a href="/home">
             <Avatar
               alt="Henry"
               src={process.env.PUBLIC_URL +"/images/headshot1.png"}
