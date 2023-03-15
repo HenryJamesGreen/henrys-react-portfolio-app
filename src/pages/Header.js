@@ -30,12 +30,12 @@ function ResponsiveAppBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <a href="https://henryjamesgreen.github.io/henrys-react-portfolio-app/">
+          <Link to="/">
             <FaReact
               className="icons react"
               style={{ fontSize: 20, color: "White", padding: "" }}
             />
-          </a>
+          </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -80,13 +80,13 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <a href="https://henryjamesgreen.github.io/henrys-react-portfolio-app/">
+          <Link to="/">
             <Avatar
               alt="Henry"
               src={process.env.PUBLIC_URL + "/images/headshot1.png"}
               style={{ padding: "5px" }}
             />
-          </a>
+          </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
