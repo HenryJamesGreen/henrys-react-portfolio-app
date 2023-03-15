@@ -13,13 +13,13 @@ function Home() {
         alignItems: "center",
       }}
     >
-      <Card sx={{ width: 400, marginBottom: "100px", marginTop: "50px" }}>
+      <Card sx={{ width: 400, marginBottom: "100px", marginTop: "50px" , border:"1px solid rgba(0,20,50,0.9)"}}>
         <CardMedia
           sx={{ height: 400 }}
           image={process.env.PUBLIC_URL + "/images/oldheadshot.jpg"}
           title="Henry Green"
         />
-        <CardContent sx={{ textAlign: "center" }}>
+        <CardContent sx={{ textAlign: "center" , borderTop:"1px solid rgba(0,20,50,0.9)"}}>
           <Typography gutterBottom variant="h5" component="div">
             Henry James Green
           </Typography>
