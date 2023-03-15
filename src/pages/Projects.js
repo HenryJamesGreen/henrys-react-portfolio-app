@@ -7,20 +7,23 @@ import { Grid } from "@mui/material";
 import { Typography } from "@mui/material";
 
 function Projects() {
-  // Here we set the state for friends and also create a function to update it.
-  // Set the initial value to friendsData imported from the json file
+  // Set userState.
+  // Set the initial value to friendsData imported from the json file.
   const [projects, setProjects] = useState(projectData);
 
   // Map over friends and render a FriendCard component for each friend object
   return (
     <Wrapper>
-      <Typography variant="h2" style={{ color: "white", textAlign: "center", marginTop: "50px"}}>
+      <Typography
+        variant="h2"
+        style={{ color: "white", textAlign: "center", marginTop: "50px" }}
+      >
         PROJECTS
       </Typography>
       <Grid container spacing={2} justifyContent="center">
         {projects.map((project) => (
           <Grid item xs={12} sm={6} md={4}>
-            <ProjectCard 
+            <ProjectCard
               id={project.id}
               key={project.id}
               name={project.name}

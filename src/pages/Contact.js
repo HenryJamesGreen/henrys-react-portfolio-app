@@ -10,6 +10,8 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFilePdf } from "react-icons/fa";
 
+//Contact forms and buttons for page. Could make this cleaner (given more time) by putting the form itself in the components folder.
+
 function Contact() {
   return (
     <Box sx={{ flexGrow: 1, m: 1 }}>
@@ -25,7 +27,15 @@ function Contact() {
         CONTACT
       </Typography>
 
-      <Card style={{ maxWidth: 450, margin: "0 auto", padding: "20px 5px", justifyContent: "center" , textAlign: "center"}}>
+      <Card
+        style={{
+          maxWidth: 450,
+          margin: "0 auto",
+          padding: "20px 5px",
+          justifyContent: "center",
+          textAlign: "center",
+        }}
+      >
         <CardContent>
           <Typography gutterBottom variant="h5">
             Contact Me
@@ -125,6 +135,7 @@ function Contact() {
           </a>
         </Grid>
 
+        {/* Github */}
         <Grid item>
           <a href="https://github.com/HenryJamesGreen" target="_blank">
             <FaGithub
@@ -132,6 +143,7 @@ function Contact() {
               style={{ fontSize: 150, color: "White" }}
             />
           </a>
+          {/* LinkedIn */}
         </Grid>
         <Grid item>
           <a
