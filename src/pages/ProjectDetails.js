@@ -9,10 +9,11 @@ import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
 
 function ProjectDetails() {
+  // hook allows extraction of id value from router to then use and find relevant project in the json file. If no project is found, return 'no project found'. If found, jsx set.
   let { id } = useParams();
   let project = projectData.find((p) => p.id === parseInt(id));
-  console.log(projectData);
-  console.log(project);
+  //console.log(projectData);
+  //console.log(project);
 
   if (!project) {
     return <div>Project not found</div>;
