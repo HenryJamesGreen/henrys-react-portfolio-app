@@ -106,7 +106,7 @@ function Contact() {
       >
         <Grid item>
           <a
-            href={process.env.PUBLIC_URL + "images/henryjamesgreenresume.pdf"}
+            href={process.env.PUBLIC_URL + "/images/henryjamesgreenresume.pdf"}
             target="_blank"
           >
             <FaFilePdf
