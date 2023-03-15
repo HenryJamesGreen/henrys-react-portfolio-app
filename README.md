@@ -2,7 +2,7 @@
 
 An application made with React, which displays my work, CV, social links and contact details.
 
-Images go here
+![](public/images/portfolioscreengrab.png)
 
 - [Installation](#Installation)
 - [Usage](#Usage)
