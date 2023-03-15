@@ -14,8 +14,8 @@ function Projects() {
   // Map over friends and render a FriendCard component for each friend object
   return (
     <Wrapper>
-      <Typography variant="h2" style={{ color: "white", textAlign: "center" }}>
-        Projects
+      <Typography variant="h2" style={{ color: "white", textAlign: "center", marginTop: "50px"}}>
+        PROJECTS
       </Typography>
       <Grid container spacing={2} justifyContent="center">
         {projects.map((project) => (

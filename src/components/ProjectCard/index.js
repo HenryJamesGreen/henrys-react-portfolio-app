@@ -17,15 +17,16 @@ function ProjectCard(props) {
           marginLeft: "15%",
           justifyContent: "center",
           alignItems: "center",
+          border: "1px solid rgba(0,20,50,0.7) "
         }}
       >
         <CardMedia
           sx={{ height: 140 }}
           image={process.env.PUBLIC_URL + props.image}
-          title="green iguana"
+          title={props.name}
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+        <CardContent style={{ borderTop:"1px solid rgba(0,20,50,0.7)"}}>
+          <Typography gutterBottom variant="h5" component="div" style={{ color: "black", textAlign: "center"}}>
             {props.name}
           </Typography>
         </CardContent>

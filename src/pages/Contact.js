@@ -13,8 +13,8 @@ import { FaFilePdf } from "react-icons/fa";
 function Contact() {
   return (
     <Box sx={{ flexGrow: 1, m: 1 }}>
-      <Typography variant="h2" style={{ color: "white", textAlign: "center" }}>
-        Contact
+      <Typography variant="h2" style={{ color: "white", textAlign: "center", marginTop: "50px", marginBottom: "20px"}}>
+        CONTACT
       </Typography>
 
       <Card style={{ maxWidth: 450, margin: "0 auto", padding: "20px 5px" }}>
