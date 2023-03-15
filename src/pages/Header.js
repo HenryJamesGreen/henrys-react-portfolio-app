@@ -32,7 +32,7 @@ function ResponsiveAppBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <a href="/home">
+          <a href="https://henryjamesgreen.github.io/henrys-react-portfolio-app/">
             <FaReact
               className="icons react"
               style={{ fontSize: 20, color: "White", padding: "" }}
@@ -82,7 +82,7 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <a href="/home">
+          <a href="https://henryjamesgreen.github.io/henrys-react-portfolio-app/">
             <Avatar
               alt="Henry"
               src={process.env.PUBLIC_URL +"/images/headshot1.png"}
