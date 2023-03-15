@@ -13,7 +13,15 @@ import { FaFilePdf } from "react-icons/fa";
 function Contact() {
   return (
     <Box sx={{ flexGrow: 1, m: 1 }}>
-      <Typography variant="h2" style={{ color: "white", textAlign: "center", marginTop: "50px", marginBottom: "20px"}}>
+      <Typography
+        variant="h2"
+        style={{
+          color: "white",
+          textAlign: "center",
+          marginTop: "50px",
+          marginBottom: "20px",
+        }}
+      >
         CONTACT
       </Typography>
 
@@ -90,6 +98,7 @@ function Contact() {
                   variant="contained"
                   color="primary"
                   fullWidth
+                  sx={{ bgcolor: "rgba(0,20,50, 0.9)" }}
                 >
                   Submit
                 </Button>

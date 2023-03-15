@@ -26,13 +26,22 @@ function ProjectDetails() {
         alignItems: "center",
       }}
     >
-      <Card sx={{ width: 500, marginBottom: "200px" }}>
+      <Card
+        sx={{
+          width: 500,
+          marginBottom: "200px",
+          marginTop: "50px",
+          border: "1px solid rgba(0,20,50,0.7)",
+        }}
+      >
         <CardMedia
           sx={{ height: 400 }}
           image={process.env.PUBLIC_URL + project.image}
           title={project.name}
         />
-        <CardContent sx={{ textAlign: "center" }}>
+        <CardContent
+          sx={{ textAlign: "center", borderTop: "1px solid rgba(0,20,50,0.7)" }}
+        >
           <Typography gutterBottom variant="h5" component="div">
             {project.name}
           </Typography>
@@ -56,21 +65,27 @@ function ProjectDetails() {
             size="small"
             href={project.repo}
             target="_blank"
+            style={{
+              border: "1px solid rgba(0,20,50,0.7)",
+              color: "rgba(0,20,50,0.7)",
+            }}
           >
             View Code
           </Button>
           <Button
-    variant="outlined"
-    size="small"
-    component={Link}
-    to="/projects"
-  >
-   Go Back
-  </Button>
+            variant="outlined"
+            size="small"
+            component={Link}
+            to="/projects"
+            style={{
+              border: "1px solid rgba(0,20,50,0.7)",
+              color: "rgba(0,20,50,0.7)",
+            }}
+          >
+            Go Back
+          </Button>
         </CardActions>
-        
       </Card>
-      
     </div>
   );
 }
