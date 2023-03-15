@@ -32,7 +32,7 @@ function ResponsiveAppBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <a href="/">
+          <a href="/home">
             <FaReact
               className="icons react"
               style={{ fontSize: 20, color: "White", padding: "" }}
