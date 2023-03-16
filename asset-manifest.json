@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/henrys-react-portfolio-app/static/css/main.e5627f02.css",
+    "main.css": "/henrys-react-portfolio-app/static/css/main.fa560da0.css",
     "main.js": "/henrys-react-portfolio-app/static/js/main.ebd12492.js",
     "static/js/787.0a252f62.chunk.js": "/henrys-react-portfolio-app/static/js/787.0a252f62.chunk.js",
     "index.html": "/henrys-react-portfolio-app/index.html",
-    "main.e5627f02.css.map": "/henrys-react-portfolio-app/static/css/main.e5627f02.css.map",
+    "main.fa560da0.css.map": "/henrys-react-portfolio-app/static/css/main.fa560da0.css.map",
     "main.ebd12492.js.map": "/henrys-react-portfolio-app/static/js/main.ebd12492.js.map",
     "787.0a252f62.chunk.js.map": "/henrys-react-portfolio-app/static/js/787.0a252f62.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5627f02.css",
+    "static/css/main.fa560da0.css",
     "static/js/main.ebd12492.js"
   ]
 }
