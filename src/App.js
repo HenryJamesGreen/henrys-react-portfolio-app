@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename="/henrys-react-portfolio-app">
       <ResponsiveAppBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -23,5 +23,5 @@ function App() {
     </BrowserRouter>
   );
 }
-
+console.log(process.env.PUBLIC_URL)
 export default App;
