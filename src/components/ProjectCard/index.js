@@ -14,10 +14,9 @@ function ProjectCard(props) {
           maxWidth: 345,
           minWidth: 200,
           margin: 5,
-          marginLeft: "15%",
           justifyContent: "center",
           alignItems: "center",
-          border: "1px solid rgba(0,20,50,0.7) "
+          border: "1px solid rgba(0,20,50,0.7) ",
         }}
       >
         <CardMedia
@@ -25,8 +24,13 @@ function ProjectCard(props) {
           image={process.env.PUBLIC_URL + props.image}
           title={props.name}
         />
-        <CardContent style={{ borderTop:"1px solid rgba(0,20,50,0.7)"}}>
-          <Typography gutterBottom variant="h5" component="div" style={{ color: "black", textAlign: "center"}}>
+        <CardContent style={{ borderTop: "1px solid rgba(0,20,50,0.7)" }}>
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            style={{ color: "black", textAlign: "center" }}
+          >
             {props.name}
           </Typography>
         </CardContent>
