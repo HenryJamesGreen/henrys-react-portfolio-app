@@ -11,7 +11,7 @@ function ProjectCard(props) {
     <Link to={`/details/${props.id}`}>
       <Card
         sx={{
-          maxWidth: 345,
+          
           minWidth: 200,
           margin: 5,
           justifyContent: "center",
