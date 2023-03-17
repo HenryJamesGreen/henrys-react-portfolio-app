@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
@@ -9,33 +9,47 @@ import { TextField } from "@mui/material";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFilePdf } from "react-icons/fa";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
 
-
-//Contact forms and buttons for page. Could make this cleaner (given more time) by putting the form itself in the components folder.
 function Contact() {
+  const [formData, setFormData] = useState({
+    subject: "",
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    const formData = new FormData(event.target);
-    const templateParams = {
-      subject: formData.get("subject"),
-      firstName: formData.get("firstName"),
-      lastName: formData.get("lastName"),
-      email: formData.get("email"),
-      phone: formData.get("phone"),
-      message: formData.get("message"),
-    };
     emailjs
       .send(
         "service_jfh2kxf",
         "template_2j5119u",
-        templateParams,
+        formData,
         "fvg_RcErhnk6slDnq"
       )
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
           alert("Message sent successfully!");
+          setFormData({
+            subject: "",
+            firstName: "",
+            lastName: "",
+            email: "",
+            phone: "",
+            message: "",
+          });
         },
         (error) => {
           console.log("FAILED...", error);
@@ -93,6 +107,8 @@ function Contact() {
                   fullWidth
                   required
                   name="firstName"
+                  value={formData.firstName}
+                  onChange={handleInputChange}
                 />
               </Grid>
               <Grid xs={12} sm={6} item>
@@ -103,6 +119,8 @@ function Contact() {
                   fullWidth
                   required
                   name="lastName"
+                  value={formData.lastName}
+                  onChange={handleInputChange}
                 />
               </Grid>
               <Grid xs={12} item>
@@ -114,6 +132,8 @@ function Contact() {
                   fullWidth
                   required
                   name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
                 />
               </Grid>
               <Grid xs={12} item>
@@ -125,8 +145,10 @@ function Contact() {
                   fullWidth
                   required
                   name="subject"
+                  value={formData.subject}
+                  onChange={handleInputChange}
                 />
-                </Grid>
+              </Grid>
               <Grid xs={12} item>
                 <TextField
                   label="message"
@@ -137,6 +159,8 @@ function Contact() {
                   fullWidth
                   required
                   name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
                 />
               </Grid>
               <Grid xs={12} item>
