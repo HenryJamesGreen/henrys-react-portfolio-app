@@ -13,6 +13,24 @@ import { FaFilePdf } from "react-icons/fa";
 //Contact forms and buttons for page. Could make this cleaner (given more time) by putting the form itself in the components folder.
 
 function Contact() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const mailtoLink = `mailto:henryjamesgreen92@gmail.com?subject=${formData.get(
+      "subject"
+    )}&body=Name: ${formData.get(
+      "firstName"
+    )} ${formData.get(
+      "lastName"
+    )}%0D%0AEmail: ${formData.get(
+      "email"
+    )}%0D%0APhone: ${formData.get(
+      "phone"
+    )}%0D%0AMessage: ${formData.get("message")}`;
+
+    window.location.href = mailtoLink;
+  };
+
   return (
     <Box sx={{ flexGrow: 1, m: 1 }}>
       <Typography
@@ -52,7 +70,7 @@ function Contact() {
             </a>{" "}
             , or simply fill out this form!
           </Typography>
-          <form>
+          <form onSubmit={handleSubmit}>
             <Grid container spacing={1}>
               <Grid xs={12} sm={6} item>
                 <TextField
