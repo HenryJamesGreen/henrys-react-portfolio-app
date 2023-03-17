@@ -9,26 +9,39 @@ import { TextField } from "@mui/material";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFilePdf } from "react-icons/fa";
+import emailjs from 'emailjs-com';
+
 
 //Contact forms and buttons for page. Could make this cleaner (given more time) by putting the form itself in the components folder.
-
 function Contact() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
-    const mailtoLink = `mailto:henryjamesgreen92@gmail.com?subject=${formData.get(
-      "subject"
-    )}&body=Name: ${formData.get(
-      "firstName"
-    )} ${formData.get(
-      "lastName"
-    )}%0D%0AEmail: ${formData.get(
-      "email"
-    )}%0D%0APhone: ${formData.get(
-      "phone"
-    )}%0D%0AMessage: ${formData.get("message")}`;
-
-    window.location.href = mailtoLink;
+    const templateParams = {
+      subject: formData.get("subject"),
+      firstName: formData.get("firstName"),
+      lastName: formData.get("lastName"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      message: formData.get("message"),
+    };
+    emailjs
+      .send(
+        "service_jfh2kxf",
+        "template_2j5119u",
+        templateParams,
+        "fvg_RcErhnk6slDnq"
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("Message sent successfully!");
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          alert("Message failed to send.");
+        }
+      );
   };
 
   return (
@@ -79,6 +92,7 @@ function Contact() {
                   variant="outlined"
                   fullWidth
                   required
+                  name="firstName"
                 />
               </Grid>
               <Grid xs={12} sm={6} item>
@@ -88,6 +102,7 @@ function Contact() {
                   variant="outlined"
                   fullWidth
                   required
+                  name="lastName"
                 />
               </Grid>
               <Grid xs={12} item>
@@ -98,26 +113,30 @@ function Contact() {
                   variant="outlined"
                   fullWidth
                   required
+                  name="email"
                 />
               </Grid>
               <Grid xs={12} item>
                 <TextField
-                  type="number"
-                  label="Phone"
-                  placeholder="Enter phone number."
+                  type="subject"
+                  label="Subject"
+                  placeholder="Enter subject."
                   variant="outlined"
                   fullWidth
+                  required
+                  name="subject"
                 />
-              </Grid>
+                </Grid>
               <Grid xs={12} item>
                 <TextField
                   label="message"
                   multiline
                   rows={4}
-                  laceholder="Type your message here."
+                  placeholder="Type your message here."
                   variant="outlined"
                   fullWidth
                   required
+                  name="message"
                 />
               </Grid>
               <Grid xs={12} item>
