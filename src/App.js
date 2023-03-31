@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <BrowserRouter basename="/henrys-react-portfolio-app">
+    <BrowserRouter>
       <ResponsiveAppBar />
       <Routes>
         <Route path="/" element={<Home />} />
