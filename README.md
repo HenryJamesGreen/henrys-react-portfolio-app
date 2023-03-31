@@ -18,7 +18,7 @@ N/A
 
 ## Usage
 
-Wesbite Link: https://henryjamesgreen.github.io/henrys-react-portfolio-app/
+Wesbite Link: https://henrys-portfolio.netlify.app/
 
 To access my online portfolio, click the above link. upon clicking, you will be directed to the 'Home' page, complete with a headshot, a little bit about me, and an indication that this is a portfolio site. If you click on the 'Projects' tab, displayed in the responsive nav (or 'app' in MUI) bar, you will be presented with six dynamically displayed projects, complete with a screengrab and their names. upon clicking on one of these projects, you will find a screengrab, title and desciption, with a buttons directing the user to 'view code' and/or 'view repo' (please note, if no link is available, just the repo button willl display). Clicking the link will allow you to just as the button title says for that particular project. Note there is also a button to take you back to the projects page, to save the user cycling through the navbar, for improved UI experience.
 
