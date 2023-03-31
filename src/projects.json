@@ -1,6 +1,22 @@
 [
   {
     "id": 1,
+    "name": "Thank You App",
+    "description": "A React single-page app we built to say thank you to our instructors.",
+    "image": "/images/thank-you.png",
+    "deployed": "https://thankyou-very-much.netlify.app/",
+    "repo": "https://github.com/HenryJamesGreen/thankyou.git"
+  },
+  {
+    "id": 2,
+    "name": "Ask God",
+    "description": "A React app that integrates OpenAI API, and Quotable.io API to provide a user-friendly and interactive platform for individuals to connect with an AI chatbot. By using Ask God, you can access the wealth of knowledge and expertise that ChatGPT has to offer, and receive intelligent and insightful answers to your questions.",
+    "image": "/images/Ask-god.png",
+    "deployed": "https://ask-god.netlify.app/",
+    "repo": "https://github.com/DericWard/Ask-God2.git"
+  },
+  {
+    "id": 3,
     "name": "Team profile Generator",
     "description": "An application designed to take user-inputted information about employees on a software engineering team, that then generates an HTML webpage that displays summaries for each person.",
     "image": "/images/TPG.png",
@@ -8,7 +24,7 @@
     "repo": "https://github.com/HenryJamesGreen/henrys-team-profile-generator.git"
   },
   {
-    "id": 2,
+    "id": 4,
     "name": "README Generator",
     "description": "A command-line application that dynamically generates a professional README.md file from a user's input.",
     "image": "/images/READMEgen.png",
@@ -16,7 +32,7 @@
     "repo": "https://github.com/HenryJamesGreen/henrys-professional-readme-generator.git"
   },
   {
-    "id": 3,
+    "id": 5,
     "name": "Pokemon Quiz",
     "image": "/images/pokequiz.png",
     "description": "This project is a personality quiz, where you can find out your inner Pokemon.",
@@ -24,7 +40,7 @@
     "repo": "https://github.com/eliza-an/pokepod-pokemon-quiz.git"
   },
   {
-    "id": 4,
+    "id": 6,
     "name": "Weather Dashboard App",
     "description": "A weather app where you can view the forecast for the cities of your choosing.",
     "image": "/images/weather-dash.png",
@@ -32,15 +48,7 @@
     "repo": "https://github.com/HenryJamesGreen/weather-dashboard.git"
   },
   {
-    "id": 5,
-    "name": "Code Quiz",
-    "description": "A code quiz that asks you questions about JavaScript, and presents you with your highscores at the end.",
-    "image": "/images/code-quiz1.png",
-    "deployed": "https://henryjamesgreen.github.io/code-quiz/",
-    "repo": "https://github.com/HenryJamesGreen/code-quiz.git"
-  },
-  {
-    "id": 6,
+    "id": 7,
     "name": "Daily Planner App",
     "description": "A daily planner application, made using jQuery",
     "image": "/images/DPA.png",
