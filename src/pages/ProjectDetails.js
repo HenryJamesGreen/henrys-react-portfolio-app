@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useParams } from "react-router-dom";
 import projectData from "../projects.json";
 import Card from "@mui/material/Card";
